@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library</title>
+    <style>
+        /* Color Scheme & Styling */
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --card-bg: #1e1e1e;
+            --accent-color: #00608675; /* Neon green accent */
+            --hover-color: #00395075;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            color: var(--accent-color);
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* The Grid layout for the game cards */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Individual Game Cards */
+        .game-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: left;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px #00608675;
+        }
+
+        .game-title {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .game-desc {
+            font-size: 0.95em;
+            color: #bbbbbb;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        /* The Download Button */
+        .download-btn {
+            display: block;
+            text-align: center;
+            background-color: var(--accent-color);
+            color: #121212;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+            color:white;
+        }
+
+        .download-btn:hover {
+            background-color: var(--hover-color);
+            color:white;
+        }
+        footer{
+            padding: 25px;
+            color: white;
+            background-color: #00608675;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="
+            color:#0094cfa4;">GameStore</h1>
+    
+    <div class="grid-container">
+
+        <div class="game-card">
+            <h2 class="game-title">GTA VICE CITY</h2>
+            <p class="game-desc">A open worls game, in which you can do missions, drives cars, and many more!</p>
+            <a href="YOUR_DOWNLOAD_LINK_HERE.zip" class="download-btn" download>Download Game</a>
+        </div>
+        <div class="game-card">
+            <h2 class="game-title">PROJECT IGI</h2>
+            <p class="game-desc">A Assaisan-type game in which your player is an undercover agent of Millitary!</s></p>
+            <a href="https://example.com/pixelquest.exe" class="download-btn" download>Download Game</a>
+        </div>
+
+        <div class="game-card">
+            <h2 class="game-title">ZOMBIE SHOOTER</h2>
+            <p class="game-desc">A zombie world game in which your world has been destroyed by ZOMBIES!</p>
+            <a href="https://example.com/cosmicracer.dmg" class="download-btn" download>Download Game</a>
+        </div>
+
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <footer>
+        Sobi's<b>  GAMESTORE</b> &reg 2026 
+    </footer>
+
+</body>
+</html>
