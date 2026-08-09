@@ -1,2 +1,2 @@
 # GAMESTORE
-Where you can get thevgame which are crucial to find fond online Easily
+Where you can get the game which are crucial to find fond online Easily
