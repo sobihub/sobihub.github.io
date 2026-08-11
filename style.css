@@ -1,0 +1,87 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --accent-color: #00608675; /* Neon green accent */
+    --hover-color: #00263565;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 40px;
+    color:#0094cfa4;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+h1:hover{
+    transform: translateY(-5px);
+    text-shadow: 0 8px 15px #00445f63;
+}
+/* The Grid layout for the game cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Individual Game Cards */
+.game-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #00608675;
+}
+.game-title {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.game-desc {
+    font-size: 0.95em;
+    color: #bbbbbb;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+/* The Download Button */
+.download-btn {
+    display: block;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: #121212;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+    color:white;
+}
+.download-btn:hover {
+    background-color: var(--hover-color);
+    color:white;
+}
+footer{
+    padding: 15px;
+    color: white;
+    background-color: #00608675;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    text-align: center;
+}
